@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5
+    
+    
+    
+}
+main{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    /* cursor: pointer; */
+}
+
+img{
+    cursor: pointer;
+}
+
+.divider{
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.divider::before{
+    left: 0;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+
+.divider::after{
+    right: 0;
+}
+
+/* .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 25px;
+} */
+
+
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    margin-bottom: 25px;
+}
+
+
+.form-group{
+    flex: 1;
+    min-width: calc(50%- 7.5px);
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.form-group input, select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    cursor: pointer;
+}
+
+
+
+button{
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    margin: 10px 0 30px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(74, 26, 122);
+}
+
+
+.signin-link{
+    text-align: center;
+    font-size: 16px;
+}
+
+.signin-link a {
+    /* color: ; */
+    text-decoration: none;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Form Row Resposiveness */
+@media (max-width: 480px) {
+    .form-group {
+        min-width: 100%;
+    }
+}
